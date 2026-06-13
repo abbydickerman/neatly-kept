@@ -8,7 +8,7 @@ type AuthMode = 'signin' | 'signup';
 
 function SignInContent() {
   const searchParams = useSearchParams();
-  const callbackUrl = searchParams.get('callbackUrl') ?? '/layout-plan';
+  const callbackUrl = searchParams.get('callbackUrl') ?? '/';
   const error = searchParams.get('error');
 
   const [mode, setMode] = useState<AuthMode>('signin');
